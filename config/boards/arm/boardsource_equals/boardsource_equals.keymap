@@ -52,6 +52,13 @@
 		tapping-term-ms = <150>;
 		bindings = <&kp LSHFT>, <&caps_word>;
 	};
+	  td_ctmd: control_and_comand {
+		compatible = "zmk, behavior-tap-dance";
+		label = "CONTROL_AND_COMAND";
+		#binding-cells = <0>;
+		tapping-term-ms = <200>;
+		bindings = <&mt LCTRL LCTRL>, <&mt LCMD LCMD>;
+	};
     };
 
     keymap {
@@ -138,3 +145,4 @@
 
     };
 };
+
