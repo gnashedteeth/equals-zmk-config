@@ -65,9 +65,9 @@
 #endif
 
 #ifdef QWERTY_BASE
- &kp TAB    &kp Q      &kp W      &kp E       &kp R          &kp T          &kp Y            &kp U          &kp I       &kp O      &kp P         &kp BKSP
- &kp ESC    &kp A      &kp S      &kp D       &kp F          &kp G          &kp H            &kp J          &kp K       &kp L      &kp SEMI      &kp QUOT
- &kp LSHFT  &kp Z      &kp X      &kp C       &kp V          &kp B          &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH      &mt RSHIFT RET
+ &kp ESC    &kp Q      &kp W      &kp E       &kp R          &kp T          &kp Y            &kp U          &kp I       &kp O      &kp P         &kp BKSP
+ &kp TAB    &kp A      &kp S      &kp D       &kp F          &kp G          &kp H            &kp J          &kp K       &kp L      &kp SEMI      &kp QUOT
+ &kp LSHFT  &kp Z      &kp X      &kp C       &kp V          &kp B          &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH      &kp RET
 #else
  &kp ESC    &kp Q      &kp W      &kp F       &kp P          &kp B          &kp J            &kp L          &kp U       &kp Y      &kp QUOT      &kp BKSP
  &kp TAB    &kp A      &kp R      &kp S       &kp T          &kp G          &kp M            &kp N          &kp E       &kp I      &kp O         &kp QUOT
@@ -76,7 +76,7 @@
 #if defined(BOTTOM_MIT)
  &kp LCTRL  &mo SYM_L   &kp LGUI  &kp LALT    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp LEFT    &kp UP     &kp DOWN      &kp RIGHT
 #else
- &trans  &trans   &kp LCTRL  &kp LALT    &mo NAV_L      &kp SPACE      &kp SPACE          &mo NUM_L      &kp RWIN    &kp RCTRL     &trans      &trans
+ &kp LCTRL  &mo SYM_L   &kp LGUI  &kp LALT    &mo NAV_L      &kp SPACE      &kp RET          &mo NUM_L      &kp LEFT    &kp UP     &kp DOWN      &kp RIGHT
 #endif
             >;
         };
@@ -138,4 +138,3 @@
 
     };
 };
-
