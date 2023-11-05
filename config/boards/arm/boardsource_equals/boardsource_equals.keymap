@@ -15,6 +15,7 @@
 #define BOTTOM_ORTHO   1
 // #define BOTTOM_MIT     1
 
+#define BAS_L 0
 #define NAV_L 1
 #define NUM_L 2
 #define SYM_L 3
@@ -42,6 +43,14 @@
 #endif
 
 #endif
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+	tri_layer {
+	    if-layers = <NAV_L NUM_L>;
+	    then-layer = <SYM_L>;
+	};
     };
 
     tap_dances {
@@ -94,7 +103,7 @@
 #if defined(BOTTOM_MIT)
 &trans  &trans        &trans     &trans      &trans                &trans             &trans      &trans   &trans &trans &trans
 #else
-&trans  &trans   &kp LCTRL  &kp LALT    &mo NAV_L      &kp SPACE      &kp SPACE          &mo NUM_L      &kp RWIN    &kt CAPS     &trans      &trans
+&trans  &trans   &kp LCTRL  &kp LALT    &mo NAV_L      &kp SPACE      &kp SPACE          &mo NUM_L      &kp N0    &kt CAPS     &trans      &trans
 #endif
             >;
         };
@@ -130,7 +139,7 @@
 #if defined(BOTTOM_MIT)
 &trans &trans        &trans     &kp RPAR        &trans                &trans             &trans      &trans   &trans &trans &trans
 #else
-&trans  &trans   &kp LCTRL  &kp LALT    &mo NAV_L      &kp SPACE      &kp SPACE          &mo NUM_L      &kp RWIN    &kt CAPS     &trans      &trans
+&bootloader  &sys_reset   &kp LCTRL  &kp LALT    &mo NAV_L      &kp SPACE      &kp SPACE          &mo NUM_L      &kp RWIN    &kt CAPS     &trans      &trans
 #endif
             >;
         };
