@@ -137,7 +137,7 @@
 #endif
 
 &trans &kp LBRC      &kp LS(N7)   &kp LS(N8)    &kp LS(N9)     &kp RBRC     &trans       &trans      &trans       &trans         &trans        &kp PSCRN
-&mt LCTRL ES C    &kp COLON     &kp C_VOL_UP &kp C_VOL_DN  &kp C_MUTE     &kp PLUS     &trans       &kp LEFT    &kp UP       &kp DOWN       &kp RIGHT     &trans
+&mt LCTRL ESC    &kp COLON     &kp C_VOL_UP &kp C_VOL_DN  &kp C_MUTE     &kp PLUS     &trans       &kp LEFT    &kp UP       &kp DOWN       &kp RIGHT     &trans
 &trans     &trans  &trans &trans  &trans   &trans &trans &kp HOME    &kp PG_UP    &kp PG_DN      &kp END       &trans
 #if defined(BOTTOM_MIT)
 &trans &trans        &trans     &kp RPAR        &trans                &trans             &trans      &trans   &trans &trans &trans
