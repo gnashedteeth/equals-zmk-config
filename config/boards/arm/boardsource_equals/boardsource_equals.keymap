@@ -83,7 +83,7 @@
 #else
  &kp ESC    &kp Q      &kp W      &kp F       &kp P          &kp B          &kp J            &kp L          &kp U       &kp Y      &kp QUOT      &kp BKSP
  &kp TAB    &kp A      &kp R      &kp S       &kp T          &kp G          &kp M            &kp N          &kp E       &kp I      &kp O         &kp QUOT
- &kp LSHFT  &kp Z      &kp X      &kp C       &kp D          &kp V          &kp K            &kp H          &kp COMMA   &kp DOT    &kp SEMI      &kp RET
+ &mt LSHIFT DEL  &kp Z      &kp X      &kp C       &kp D          &kp V          &kp K            &kp H          &kp COMMA   &kp DOT    &kp SEMI      &kp RET
 #endif
 #if defined(BOTTOM_MIT)
  &kp LCTRL  &mo SYM_L   &kp LGUI  &kp LALT    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp LEFT    &kp UP     &kp DOWN      &kp RIGHT
