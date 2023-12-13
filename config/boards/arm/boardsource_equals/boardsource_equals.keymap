@@ -24,7 +24,7 @@
 &lt { quick_tap_ms = <75>; };
 
 // define mod-tap tapping term
-&mt { tapping-term-ms = <75>; };
+&mt { tapping-term-ms = <100>; };
 
 / {
     chosen {
