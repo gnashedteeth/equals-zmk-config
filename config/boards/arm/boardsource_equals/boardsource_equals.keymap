@@ -21,10 +21,10 @@
 #define SYM_L 3
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-&lt { quick_tap_ms = <200>; };
+&lt { quick_tap_ms = <75>; };
 
 // define mod-tap tapping term
-&mt { tapping-term-ms = <150>; };
+&mt { tapping-term-ms = <75>; };
 
 / {
     chosen {
@@ -88,7 +88,7 @@
 #if defined(BOTTOM_MIT)
  &kp LCTRL  &mo SYM_L   &kp LGUI  &kp LALT    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp LEFT    &kp UP     &kp DOWN      &kp RIGHT
 #else
- &trans  &trans   &kp RWIN  &kp LALT    &mo NAV_L      &kp SPACE      &kp SPACE          &mo NUM_L      &kp LCTRL    &kt CAPS     &trans      &trans
+ &trans  &trans   &trans     &kp LCMD    &kp LALT      &lt NAV_L SPACE      &lt NUM_L SPACE        &kp LCTRL      &kt LCAPS    &trans     &trans      &trans
 #endif
             >;
         };
@@ -106,7 +106,7 @@
 #if defined(BOTTOM_MIT)
 &trans  &trans        &trans     &trans      &trans                &trans             &trans      &trans   &trans &trans &trans
 #else
-&trans  &trans   &kp RWIN  &kp LALT    &mo NAV_L      &kp SPACE      &kp SPACE          &mo NUM_L      &kp N0    &kt CAPS     &trans      &trans
+&trans  &trans   &trans     &kp LCMD    &kp LALT      &lt NAV_L SPACE      &lt NUM_L SPACE        &kp LCTRL      &kp N0    &trans     &trans      &trans
 #endif
             >;
         };
@@ -124,7 +124,7 @@
 #if defined(BOTTOM_MIT)
 &trans  &trans       &trans     &kp N0      &trans           &none            &trans        &kp DEL      &trans &trans &trans
 #else
-&trans  &trans   &kp RWIN  &kp LALT    &mo NAV_L      &kp SPACE      &kp SPACE          &mo NUM_L      &kp LCTRL    &kt CAPS     &trans      &trans
+&trans  &trans   &trans     &kp LCMD    &kp LALT      &lt NAV_L SPACE      &lt NUM_L SPACE        &kp LCTRL      &kt LCAPS    &trans     &trans      &trans
 #endif
             >;
         };
@@ -136,13 +136,13 @@
 &trans     &trans     &trans     &trans      &trans          &trans       &trans     &trans         &trans      &trans     &trans     &trans
 #endif
 
-&trans &kp LBRC      &kp LS(N7)   &kp LS(N8)    &kp LS(N9)     &kp RBRC     &trans       &trans      &trans       &trans         &trans        &kp PSCRN
+&trans &kp LBRC      &kp LS(N7)   &kp LS(N8)    &kp LS(N9)     &kp RBRC     &trans       &trans      &trans       &trans         &trans        &kp BKSP
 &mt LCTRL ESC    &kp COLON     &kp C_VOL_UP &kp C_VOL_DN  &kp C_MUTE     &kp PLUS     &trans       &kp LEFT    &kp UP       &kp DOWN       &kp RIGHT     &trans
 &trans     &trans  &trans &trans  &trans   &trans &trans &kp HOME    &kp PG_UP    &kp PG_DN      &kp END       &trans
 #if defined(BOTTOM_MIT)
 &trans &trans        &trans     &kp RPAR        &trans                &trans             &trans      &trans   &trans &trans &trans
 #else
-&bootloader  &sys_reset   &kp RWIN  &kp LALT    &mo NAV_L      &kp SPACE      &kp SPACE          &mo NUM_L      &kp LCTRL    &kt CAPS     &trans      &trans
+&bootloader  &sys_reset   &trans     &kp LCMD    &kp LALT      &lt NAV_L SPACE      &lt NUM_L SPACE        &kp LCTRL      &kt LCAPS    &trans     &trans      &trans
 #endif
             >;
         };
